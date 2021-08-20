@@ -118,9 +118,9 @@ class MyStackView: BaseStackView {
     private func setPointyShapeLayerAtBubbleStackView() {
         let path = CGMutablePath()
 
-        path.move(to: CGPoint(x: 0, y: 0))
-        path.addLine(to: CGPoint(x: pointyWidth / 2, y: pointyHeight))
-        path.addLine(to: CGPoint(x: pointyWidth, y: 0))
+        path.move(to: CGPoint(x: -pointyWidth / 2, y: 0))
+        path.addLine(to: CGPoint(x: 0, y: pointyHeight))
+        path.addLine(to: CGPoint(x: pointyWidth / 2, y: 0))
         path.addLine(to: CGPoint(x: 0, y: 0))
 
         let shapeLayer = CAShapeLayer()
